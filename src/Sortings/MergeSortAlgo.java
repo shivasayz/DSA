@@ -26,7 +26,6 @@ public class MergeSortAlgo {
     }
 
     public static void Merge(int[] arr, int low, int mid, int high){
-
         ArrayList<Integer> list = new ArrayList<>();
 
         int left = low;
