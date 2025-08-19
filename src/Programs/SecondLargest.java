@@ -1,6 +1,6 @@
 package Programs;
 
-public class secondLargest {
+public class SecondLargest {
     public static void main(String[] args) {
         int[] arr = {100,82,52,62,41,12,35,95,78};
         System.out.println(findSecondLargest(arr));

@@ -1,7 +1,5 @@
 package Programs;
 
-import Patterns.fullPyramid;
-
 public class removeDuplicates {
     public static void main(String[] args) {
         int[] arr = {1,1,2,2,2,3};
@@ -17,7 +15,5 @@ public class removeDuplicates {
             }
         }
         System.out.println(i+1);
-        System.out.println(fullPyramid.printFullPyramid(4));
-        System.out.println(BestTimeToBuyAndSellStocks.findBestTime(new int[] {7,1,5,3,6,4}));
     }
 }
