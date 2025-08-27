@@ -38,8 +38,8 @@ public class MajorityElements2_Optimal {
         }
 
         List<Integer> list = new ArrayList<>();
-
         count1 = 0; count2=0;
+
         for (int k = 0; k < len; k++) {
             if (arr[k] == ele1){
                 count1++;
