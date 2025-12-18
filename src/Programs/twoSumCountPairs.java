@@ -3,7 +3,7 @@ package Programs;
 import java.util.Map;
 import java.util.HashMap;
 
-public class TwoSumCountPairs {
+public class twoSumCountPairs {
     public static void main(String[] args){
         int[] arr = {1, 5, 7, -1, 5};
         int tar = 6;
