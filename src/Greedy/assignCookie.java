@@ -16,9 +16,7 @@ public class assignCookie {
 
         int l = 0, m = 0;
         while(l < s.length && m < g.length){
-            if (s[l] >= g[m]){
-                m++;
-            }
+            if (s[l] >= g[m]) m++;
             l++;
         }
         return m;
