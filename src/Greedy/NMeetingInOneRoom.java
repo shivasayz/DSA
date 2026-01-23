@@ -16,18 +16,15 @@ public class NMeetingInOneRoom {
     public static List<Integer> maxMeeting(int[] start, int[] end) {
         List<int[]> meeting = new ArrayList<>();
 
-        // Store as {end, start, index}
         for (int i = 0; i < start.length; i++) {
             meeting.add(new int[]{end[i], start[i], i + 1});
         }
 
-        // Sort by end time (ascending)
         meeting.sort((e1, e2) -> e1[0] - e2[0]);
 
         List<Integer> result = new ArrayList<>();
         int lastEnd = -1;
 
-        // Greedy selection
         for (int[] m : meeting) {
             if (m[1] > lastEnd) {
                 result.add(m[2]);
