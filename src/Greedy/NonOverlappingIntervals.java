@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class NonOverlappingIntervals {
     public static void main(String[] args) {
-        int[][] intervals = {{1,2}, {2,3}, {3,4}, {1,3}};
+        int[][] intervals = {{1,3}, {3,4}, {4,5}, {1,3}};
         System.out.println(findNonOverlapping(intervals));
     }
 
