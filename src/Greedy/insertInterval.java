@@ -8,6 +8,6 @@ public class insertInterval {
     }
 
     public static int[][] insert(int[][] interval, int[] newInterval){
-
+        return new int[][] {{0,0}, {0, 0}};
     }
 }
