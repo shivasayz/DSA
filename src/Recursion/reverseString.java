@@ -13,6 +13,8 @@ public class reverseString {
         reverseAStringHelper(s, 0, s.length-1);
     }
 
+    // TC -> O(n)
+    // SC -> O(n) stack space
     public static void reverseAStringHelper(char[] s, int start, int end){
         // base case
         if (start >= end) return;
