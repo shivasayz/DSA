@@ -1,9 +1,9 @@
 package BinaryTrees;
 
-public class InorderImplementation {
+public class InorderTraversal {
     Node root;
 
-    public InorderImplementation(){
+    public InorderTraversal(){
         root = null;
     }
 
@@ -36,7 +36,7 @@ public class InorderImplementation {
     }
 
     public static void main(String[] args) {
-        InorderImplementation inorder = new InorderImplementation();
+        InorderTraversal inorder = new InorderTraversal();
         inorder.insert(2);
         inorder.insert(3);
         inorder.insert(4);
