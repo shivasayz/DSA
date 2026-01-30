@@ -7,10 +7,10 @@ public class PostOrderTraversal {
         root = null;
     }
 
+    // Exposed functions
     public void insert(int key){
         root = insertRec(root, key);
     }
-
     public void postOrder(){
         postOrderRec(root);
     }
