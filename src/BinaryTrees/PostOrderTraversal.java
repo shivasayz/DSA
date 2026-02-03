@@ -1,5 +1,9 @@
 package BinaryTrees;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
 public class PostOrderTraversal {
     Node root;
 
@@ -7,20 +11,30 @@ public class PostOrderTraversal {
         root = null;
     }
 
-    // Exposed functions
-    public void insert(int key){
-        root = insertRec(root, key);
-    }
-    public void postOrder(){
-        postOrderRec(root);
+    public List<Integer> PostOrderIteration(){
+        Stack<Node> st1 = new Stack<>();
+        Stack<Node> st2 = new Stack<>();
+        List<Integer> po = new ArrayList<>();
+
+        if (root == null) return po;
+        st1.push(root);
+
+        while (!st1.isEmpty()){
+            root = st1.pop();
+            st2.add(root);
+
+            if (root.left != null) st1.push(root.left);
+            if (root.right != null) st1.push(root.right);
+        }
+
+        while (!st2.isEmpty()){
+            po.add(st2.pop().data);
+        }
+        return po;
     }
 
-    private void postOrderRec(Node root){
-        if (root != null){
-            postOrderRec(root.left);
-            postOrderRec(root.right);
-            System.out.print(root.data+" ");
-        }
+    public void insert(int key){
+        root = insertRec(root, key);
     }
 
     private Node insertRec(Node root, int key){
@@ -36,15 +50,15 @@ public class PostOrderTraversal {
     }
 
     public static void main(String[] args) {
-        PostOrderTraversal pot = new PostOrderTraversal();
-        pot.insert(30);
-        pot.insert(25);
-        pot.insert(45);
-        pot.insert(15);
-        pot.insert(29);
-        pot.insert(35);
-        pot.insert(49);
+        PostOrderTraversal pt = new PostOrderTraversal();
+        pt.insert(30);
+        pt.insert(25);
+        pt.insert(45);
+        pt.insert(15);
+        pt.insert(29);
+        pt.insert(42);
 
-        pot.postOrder();
+        List<Integer> res = pt.PostOrderIteration();
+        System.out.println(res);
     }
 }
