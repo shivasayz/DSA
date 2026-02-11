@@ -1,9 +1,9 @@
 package BinaryTrees;
 
-public class PreOrderTraversal {
+public class PreOrderTraversalRec {
     Node root;
 
-    public PreOrderTraversal(){
+    public PreOrderTraversalRec(){
         root = null;
     }
 
@@ -36,7 +36,7 @@ public class PreOrderTraversal {
     }
 
     public static void main(String[] args) {
-        PreOrderTraversal pt = new PreOrderTraversal();
+        PreOrderTraversalRec pt = new PreOrderTraversalRec();
         pt.insert(30);
         pt.insert(25);
         pt.insert(45);

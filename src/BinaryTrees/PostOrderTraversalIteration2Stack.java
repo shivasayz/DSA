@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class PostOrderTraversal {
+public class PostOrderTraversalIteration2Stack {
     Node root;
 
-    PostOrderTraversal(){
+    PostOrderTraversalIteration2Stack(){
         root = null;
     }
 
@@ -50,7 +50,7 @@ public class PostOrderTraversal {
     }
 
     public static void main(String[] args) {
-        PostOrderTraversal pt = new PostOrderTraversal();
+        PostOrderTraversalIteration2Stack pt = new PostOrderTraversalIteration2Stack();
         pt.insert(30);
         pt.insert(25);
         pt.insert(45);

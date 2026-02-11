@@ -1,9 +1,9 @@
 package BinaryTrees;
 
-public class InorderTraversal {
+public class InorderTraversalRec {
     Node root;
 
-    public InorderTraversal(){
+    public InorderTraversalRec(){
         root = null;
     }
 
@@ -36,7 +36,7 @@ public class InorderTraversal {
     }
 
     public static void main(String[] args) {
-        InorderTraversal inorder = new InorderTraversal();
+        InorderTraversalRec inorder = new InorderTraversalRec();
         inorder.insert(2);
         inorder.insert(3);
         inorder.insert(4);
