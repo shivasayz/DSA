@@ -38,7 +38,7 @@ public class diameterOfTree {
 
     public static void main(String[] args) {
         diameterOfTree obj = new diameterOfTree();
-        int[] values = {25, 18, 45, 32, 52, 31, 30};
+        int[] values = {7, 3, 8, 1, 5, 9, 0, 10};
 
         for(int val: values){
             obj.insert(val);
